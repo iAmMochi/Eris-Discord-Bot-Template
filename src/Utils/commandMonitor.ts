@@ -14,6 +14,7 @@ import { Message, Guild } from "eris";
 import { Command } from "../types/Commands";
 import { clientCache } from "../Cache";
 import { Configs } from "../Configurations";
+import { getTime } from "./helpers";
 
 export const parsePrefix = (guildID: string) => {
     const prefix = guildID ? clientCache.guild.prefixes.get(guildID) : Configs.prefix;

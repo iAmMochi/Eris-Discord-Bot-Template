@@ -4,6 +4,7 @@ exports.executeCommand = exports.logCommand = exports.parseCommand = exports.par
 const chalk_1 = require("chalk");
 const Cache_1 = require("../Cache");
 const Configurations_1 = require("../Configurations");
+const helpers_1 = require("./helpers");
 const parsePrefix = (guildID) => {
     const prefix = guildID ? Cache_1.clientCache.guild.prefixes.get(guildID) : Configurations_1.Configs.prefix;
     return prefix || Configurations_1.Configs.prefix;
@@ -24,7 +25,7 @@ function logCommand(message, guildName, type, commandName) {
             : chalk_1.white(type))}]`;
     const user = chalk_1.bgGreen(chalk_1.black(`${message.author.username}#${message.author.discriminator}(${message.author.id})`));
     const guild = chalk_1.bgMagenta(chalk_1.black(`${guildName}${message.guildID ? `(${message.guildID})` : ""}`));
-    console.log(`${chalk_1.bgBlue(`[${getTime()}]`)} => ${command} by ${user} in ${guild}`);
+    console.log(`${chalk_1.bgBlue(`[${helpers_1.getTime()}]`)} => ${command} by ${user} in ${guild}`);
 }
 exports.logCommand = logCommand;
 async function parseArguments(message, command, parameters) {

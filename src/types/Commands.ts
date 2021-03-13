@@ -1,4 +1,5 @@
-import { Collection, Message, Guild } from "eris";
+import { Message, Guild } from "eris";
+import { Collection } from "../Utils/Constants/Collection";
 
 export interface Command {
     name: string;
@@ -22,7 +23,7 @@ export interface Command {
         allowedUses?: number;
     };
     arguments?: CommandArgument[];
-    subcommands?: Collection<{id: string}>;
+    subcommands?: Collection<string, Command>;
     execute?: (message: Message, args: any, guild?: Guild) => unknown;
 }
 

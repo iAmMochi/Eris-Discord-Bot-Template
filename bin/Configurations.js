@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Configs = void 0;
 exports.Configs = {
-    token: "",
+    token: "Njc3OTIzODgxNDkwNTc5NDY1.XkbT0A._sZ8BByqryG6N3pM3-r7m8Ar8sk",
     prefix: "-",
     botListTokens: {
         DISCORD_BOTS_CO: "",
