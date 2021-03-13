@@ -1,0 +1,22 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "target": "ESNext",
+        "module": "CommonJS",
+        "removeComments": true,
+        "alwaysStrict": true,
+        "strict": true,
+        "declaration": true,
+        "noImplicitThis": true,
+        "outDir": "bin",
+        "pretty": true,
+        "sourceMap": true,
+        "resolveJsonModule": true
+    },
+    "include": [
+        "src/**/*.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
