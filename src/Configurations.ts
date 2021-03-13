@@ -1,5 +1,5 @@
 export const Configs = {
-    token: "Njc3OTIzODgxNDkwNTc5NDY1.XkbT0A._sZ8BByqryG6N3pM3-r7m8Ar8sk",
+    token: "",
     prefix: "-",
 
     botListTokens: {
